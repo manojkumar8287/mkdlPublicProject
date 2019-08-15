@@ -1,0 +1,14 @@
+.div-home{
+  background-color: rgb(82, 171, 211);
+}
+
+.div-header{
+  text-align:center;
+  background-color: rgb(82, 171, 211);
+  color: white;
+  margin: 10px;
+}
+
+.icon-android{
+  color: green
+}

@@ -1,0 +1,68 @@
+<div class="mat-acc">
+<mat-accordion >
+    <mat-expansion-panel *ngFor="let service of this.services | async" class="panel-bg">
+      <mat-expansion-panel-header class="panel-header"  (click)="openService(service.name)">
+        <mat-panel-title>
+          {{service.name}}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+
+      <mat-grid-list cols="3" rowHeight="350px" *ngIf="this.categories !== undefined">
+          <mat-grid-tile  *ngFor="let category of this.categories | async" class="mat-grid-tile" >
+
+            <mat-card *ngIf="category.name !== undefined" class="example-card">
+              <mat-card-header class="example-card-header">
+                  {{ category.name }}
+                </mat-card-header>
+              <mat-card-content class="example-card-content">
+              <p> {{category.summary}}
+
+              </p>
+
+              </mat-card-content>
+              <mat-action-row>
+                  <button mat-button (click)="this.explore(category)" class="mat-btn">Explore</button>
+                </mat-action-row>
+
+            </mat-card>
+
+            <mat-card *ngIf="category.day !== undefined" class="example-card">
+              <mat-card-header class="example-card-header">
+                  {{ category.day }}
+                </mat-card-header>
+              <mat-card-content class="example-card-content">
+
+                  <mat-label>Content</mat-label> <br>
+                  <!--ol>
+                    <li *ngFor="let item of category.content">
+                        <ul>{{item}}</ul>
+                    </li>
+                  </ol>
+                <br>
+                {{category.image}}
+                -->
+
+
+              </mat-card-content>
+
+              <mat-action-row>
+                  <button mat-button (click)="this.explore(category)" class="mat-btn">Explore</button>
+                </mat-action-row>
+            </mat-card>
+
+            </mat-grid-tile>
+
+          </mat-grid-list>
+
+        <!--mat-grid-list cols="2" rowHeight="2:1">
+            <mat-grid-tile *ngFor="let category of this.categories"></mat-grid-tile>
+
+          </mat-grid-list-->
+    </mat-expansion-panel>
+
+
+  </mat-accordion>
+
+
+</div>

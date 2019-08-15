@@ -1,0 +1,68 @@
+.panel-header{
+  background-color: rgb(33, 150, 243);
+
+}
+
+.panel-bg{
+  background-color: white;
+}
+
+.mat-acc{
+  width: 80%;
+  margin-left: 15%
+}
+
+
+.example-container {
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid #555;
+}
+
+.mat-grid-tile {
+  background: white;
+ margin-left: 10px;
+
+}
+
+
+.example-card {
+  max-width: 400px;
+  min-height: 250px;
+  background: white;
+}
+
+.example-card-header {
+  max-width: 500px;
+  min-width: 300px;
+  min-height: 40px;
+  background: lightblue;
+  align-content: center;
+  padding-top: 20px;
+  font-size: 20px;
+
+}
+
+
+.example-card-content {
+  max-width: 400px;
+  min-width: 300px;
+  min-height: 150px;
+  background: white;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.tile-margin{
+  margin-left: 10px;
+}
+
+.mat-btn{
+  min-height: 30px;
+  color: orange;
+}
+
+

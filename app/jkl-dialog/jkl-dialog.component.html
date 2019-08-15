@@ -1,0 +1,48 @@
+
+
+<h1 mat-dialog-title *ngIf="this.data.category.service !== undefined" >{{this.data.category.service}} > {{this.data.category.name}}</h1>
+
+
+<mat-label *ngIf="this.data.category.service === undefined">Updates</mat-label> <br>
+
+<mat-label>Content</mat-label> <br>
+<ol>
+  <li *ngFor="let item of this.data.category.content">
+      <ul>{{item}}</ul>
+  </li>
+</ol>
+<br>
+{{this.data.category.image}}
+
+
+
+<mat-label>Contacts</mat-label> <br>
+
+
+<div mat-dialog-content class="div-content">
+  <p>{{this.data.category.summary}} </p>
+  <p>{{this.data.category.detail}} </p>
+  <mat-label>Useful links</mat-label> <br>
+
+  <mat-label>Contacts</mat-label> <br>
+<ol>
+  <li *ngFor="let item of this.data.category.contactList">
+      <ul>{{item}}</ul>
+  </li>
+</ol>
+<ol>
+  <li *ngFor="let item of this.data.category.detailLink">
+      <ul>{{item}}</ul>
+  </li>
+</ol>
+
+
+<mat-label *ngIf="this.data.category.hotline !== undefined">Phone: {{this.data.category.hotline}}</mat-label> <br>
+
+<mat-label *ngIf="this.data.category.views !== undefined">Views: {{this.data.category.views}}</mat-label> <br>
+</div>
+<div mat-dialog-actions class="form-button">
+  <button mat-button (click)="onNoClick()" >Close</button>
+
+
+</div>

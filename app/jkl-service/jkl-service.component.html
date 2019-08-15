@@ -1,0 +1,52 @@
+<br>
+<div class="mat-div-center">
+<app-jkl-summary  [services]="this.services"></app-jkl-summary>
+</div>
+<!--div *ngFor="let service of this.services | async">
+<mat-accordion  >
+    <mat-expansion-panel >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{service.name}}
+        </mat-panel-title>
+        <mat-panel-description>
+          Type your name and age
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div -->
+<!--
+<mat-grid-list cols="3" rowHeight="2:1">
+  <mat-grid-tile  *ngFor="let service of services | async">
+
+    <mat-card class="example-card">
+      <mat-card-header class="example-card-header">
+          <a mat-button (click)="onClick(service.name )">{{ service.name }}</a>
+        </mat-card-header>
+      <mat-card-content class="example-card-content"> <ul>
+          <li *ngFor="let cat of categories | async">
+            {{ cat.name }} <br>
+            {{ cat.summary }}
+          </li>
+        </ul></mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
+
+</mat-grid-list>
+
+<ul>
+  <li *ngFor="let service of services | async">
+     <button mat-button (click)="onClick(service.name )">{{ service.name }}</button>
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let cat of categories | async">
+    {{ cat.name }} <br>
+    {{ cat.summary }}
+  </li>
+</ul>
+
+
+-->

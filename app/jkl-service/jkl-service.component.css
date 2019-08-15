@@ -1,0 +1,34 @@
+.example-container {
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid #555;
+}
+
+.mat-grid-tile {
+  background: rgb(249, 251, 252);
+}
+
+
+.example-card {
+  max-width: 400px;
+  background: lightblue;
+}
+
+.example-card-header {
+  max-width: 400px;
+  background: lightblue;
+}
+
+
+.example-card-content {
+  max-width: 400px;
+  background: rgb(243, 244, 245);
+}
+
+.mat-div-center{
+  margin-right: 10%;
+  align-content: center
+}
+
+
